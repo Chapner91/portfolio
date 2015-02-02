@@ -1,20 +1,46 @@
 /*This will be the primary source for all of the CSS for my portfolio webpage will be kept*/
 
-/*psuedo classes********************************************************/
 
-a:visited {
-	color: #333;
+header {
+	max-width: 100%;
+	text-align: center;
+	background: linear-gradient(#00CC66, transparent 90%, #fff 100%), 
+				#00CC66 url('../img/circuit2.jpg') no-repeat center;
+	background-image:50px 50px;
+	color: #ddd;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
+
 }
 
+/*******************************************************
+NAVIGATION LINKS
+*******************************************************/
+.navigation {
+	display: inline-block;
+	float: left;
+	margin: 5px 10%;
+	max-width: 5%;
+}
+
+/*******************************************************
+PSUEDO CLASSES
+*******************************************************/
+
+a:visited, 
 a:link {
-	color: #333;
+	color: #ffa319;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
+	font-size: 1.25rem;
+	font-weight: bold;
 }
 
 a:hover {
 	color: red;
 }
 
-
-.navigation {
-	display: inline-block;
+/*******************************************************
+CLEARFIX
+*******************************************************/
+.clearfix {
+	overflow: auto;
 }
