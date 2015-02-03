@@ -8,17 +8,21 @@ h1 {
 	padding: 0;
 	margin: 0;
 	text-align: center;
+	font-size: 5em;
 }
 
 h2{
 	text-align: center;
 	margin: 0;
 	color: #33D6FF;
+	padding: 5px 0px
 }
 
 p {
 	color: #fff;
 	text-align: center;
+	padding: 1em 20%;
+	margin: 0px;
 }
 
 a {
@@ -33,14 +37,13 @@ Heading
 header {
 	max-width: 100%;
 	text-align: center;
-	background: linear-gradient(#0c284f, transparent 90%, #62625C 100%), 
+	background: linear-gradient(#0c284f, transparent 90%, #404049 100%), 
 				#0c284f url('../img/circuit_1920.jpg') no-repeat center;
 	background-image: cover;
 	color: #33D6FF;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
 	margin: 0px;
 	padding: 0px;
-	height: 400px;
 }
 
 .jason { /*this is a div that contains the profile picture*/
@@ -68,7 +71,7 @@ NAVIGATION LINKS
 	float: left;
 	padding: 0px 10% 0px 10%;
 	max-width: 5%;
-	margin:0;
+	margin:0 0 10px 0;
 	clear: none;
 }
 
@@ -100,17 +103,21 @@ NAVIGATION LINKS
 BODY
 *******************************************************/
 body {
-	background: #62625C;
+	background: #404049;
 	max-width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
 .primary_content {
-	max-width: 80%;
+	max-width: 60%;
 	margin: auto;
+	margin-top:25px;
+	margin-bottom: 25px;
 	background: #0c284f;
 	border-radius: 15px;
+	box-shadow: inset 0px 0px 10px 3px #33D6FF;
+	font-size: 1.25em
 }
 
 /*******************************************************
@@ -133,7 +140,7 @@ FOOTER
 .footer {
 	margin: auto;
 	text-align: center;
-	background: linear-gradient(to top, #0c284f, transparent 90%, #62625C 100%), 
+	background: linear-gradient(to top, #0c284f, transparent 90%, #404049 100%), 
 				#0c284f url('../img/circuitBottom.png') no-repeat center;
 	background-image: cover;
 	color: #33D6FF;
