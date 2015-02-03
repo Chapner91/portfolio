@@ -1,6 +1,15 @@
 /*This will be the primary source for all of the CSS for my portfolio webpage will be kept*/
 
 /*******************************************************
+GENERAL
+*******************************************************/
+
+h1 {
+	padding: 0;
+	margin: 0;
+}
+
+/*******************************************************
 Heading
 *******************************************************/
 
@@ -14,12 +23,18 @@ header {
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
 	margin: 0px;
 	padding: 0px;
+	height: 400px;
+}
+
+header h2 {
+	margin: 0;
 }
 
 .jason { /*this is a div that contains the profile picture*/
 	background: url('../img/Jason.jpg');
 	border-radius: 100%;
-	box-shadow: inset 0px 0px 30px 5px rgba(0, 71, 178, .8);
+	box-shadow: inset 0px 0px 30px 5px rgba(0, 71, 178, .8), 
+				0px 0px 20px 3px #33D6FF;
 	border: solid 1px #0c284f;
 	max-width: 175px;
 	height: 175px;
@@ -29,24 +44,46 @@ header {
 /*******************************************************
 NAVIGATION LINKS
 *******************************************************/
-
+/*this is for the icon based nav bar*/
 .navigation {
-	display: inline-block;
-	float: left;
-	padding: 40px 10% 15px 10%;
-	text-decoration: none;
-	margin: auto;
-	max-width: 12.5%
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	list-style: none;
 }
 
-.navigation a:visited, 
-.navigation a:link {
-	color: #33D6FF;
-	text-shadow: 0px 0px 5px 10px rgba(12,40,79, 1);
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-decoration: none;
+.navigation li {
+	float: left;
+	padding: 0px 10% 0px 10%;
+	max-width: 4.5%;
+	height: 100px;
+	margin:0;
+	clear: none;
+}
 
+.navigation li a {
+	text-decoration: none;
+}
+
+.navigation li a p {
+	padding: 0;
+	margin: auto;
+	color: #33D6FF;
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.contactimg {
+	margin-top: 15px;
+}
+
+.currentPage {
+	border: solid 2px #33D6FF;
+	box-shadow: 0px 0px 20px 3px #33D6FF, 
+				inset 0px 0px 10px 3px #33D6FF;
+	border-radius: 100%;
+	padding: 5px;
 }
 
 /*******************************************************
@@ -83,6 +120,8 @@ FOOTER
 /*******************************************************
 CLEARFIX
 *******************************************************/
-.clearfix {
-	overflow: auto;
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
 }
