@@ -7,6 +7,23 @@ GENERAL
 h1 {
 	padding: 0;
 	margin: 0;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	margin: 0;
+	color: #33D6FF;
+}
+
+p {
+	color: #fff;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #33D6FF;
 }
 
 /*******************************************************
@@ -24,10 +41,6 @@ header {
 	margin: 0px;
 	padding: 0px;
 	height: 400px;
-}
-
-header h2 {
-	margin: 0;
 }
 
 .jason { /*this is a div that contains the profile picture*/
@@ -54,27 +67,19 @@ NAVIGATION LINKS
 .navigation li {
 	float: left;
 	padding: 0px 10% 0px 10%;
-	max-width: 4.5%;
-	height: 100px;
+	max-width: 5%;
 	margin:0;
 	clear: none;
 }
 
-.navigation li a {
-	text-decoration: none;
-}
-
 .navigation li a p {
-	padding: 0;
-	margin: auto;
+	padding: 0px;
+	margin: 0px 10%;
 	color: #33D6FF;
 	text-decoration: none;
 	font-size: 1.25rem;
 	font-weight: bold;
-}
-
-.contactimg {
-	padding: 12.5px 0px 12.5px 0px;
+	text-shadow: 0px 0px 5px 3px #0c284f;
 }
 
 .currentPage {
@@ -101,25 +106,49 @@ body {
 	margin: 0;
 }
 
+.primary_content {
+	max-width: 80%;
+	margin: auto;
+	background: #0c284f;
+	border-radius: 15px;
+}
+
 /*******************************************************
 PSUEDO CLASSES
 *******************************************************/
+a:link, 
+a:visited {
+	text-decoration: none;
+	color: #33D6FF;
+}
 
 a:hover {
-	color: #B27212;
+	color: #3F3;
 }
+
 
 /*******************************************************
 FOOTER
 *******************************************************/
 .footer {
-	border-top: solid 2px #ddd;
 	margin: auto;
 	text-align: center;
-	background: #0c284f;
+	background: linear-gradient(to top, #0c284f, transparent 90%, #62625C 100%), 
+				#0c284f url('../img/circuitBottom.png') no-repeat center;
+	background-image: cover;
+	color: #33D6FF;
 }
 
-.facebook{
+.footer p {
+	color: #33D6FF;
+	font-size: 1.25rem;
+}
+
+.footer a p:hover {
+	color: #3f3;
+}
+
+.facebook {
 	max-width: 40px;
 }
 /*******************************************************
